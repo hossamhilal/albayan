@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap-rtl.css">
+    <link rel="stylesheet" href="css/icofont.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css"> 
+    <link rel="stylesheet" href="css/playlist-style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title> EL SHEIKH   </title>
+  </head>
+    
+  
+  <body class="BG-COLOR"  onLoad="goforit()">
+
+      
+    <!--=========================================*/
+    /*============//  MAIN HEADER //============*/
+    /*=========================================-->
+    <header class="header">
+      
+     <div class="header-top">
+         <div class="container">
+              <div class="header-right wow fadeInDown" data-wow-delay=".3s" data-wow-duration="1s"> 
+				  <p> <i class="icofont icofont-ui-calendar"></i>  <center id="setdate"> </center> </p>
+              </div>
+              <div class="header-left wow fadeInDown" data-wow-delay=".3s" data-wow-duration="1s"> 
+              <p>   <span>455 </span>   <img src="images/top-eye.png" width="100%" class="img-responsive"> </p> 
+              <div class="clock">
+                 <div class="inside">
+                      <div class="content">
+                                <p class='text'>
+                                    <span id='hours'></span> : 
+                                    <span id='min'></span> 
+                                    <span id='sec'></span>&nbsp;&nbsp;
+                                    <span id='time'></span></p>
+                      </div>
+                </div>
+            </div>
+          </div>
+         </div>
+      </div>
+
+     <div class="header-bottom">
+         <div class="container">
+       
+             <img src="images/header-logo.png" width="100%"
+                  class="img-responsive wow zoomIn" data-wow-delay=".3s" data-wow-duration="1s">
+             <h3 class="wow fadeInUp" data-wow-delay="1.2s" data-wow-duration="1s"> بإشراف : ماجد بن ساعد بن عليان أبو ذراع البلوي </h3>
+
+
+             <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+
+                          <li class="nav-item">
+                              <a class="nav-link" href="index.html">  الرئيسية  <span class="sr-only">(current)</span></a>
+                          </li>
+
+                          <li class="nav-item">
+                              <a class="nav-link" href="news.html">  أخبار </a>
+                          </li>
+
+                          <li class="nav-item">
+                              <a class="nav-link" href="articles.html">  مقالات  </a>
+                          </li>
+
+                          <li class="nav-item">
+                              <a class="nav-link" href="videos.html">  مرئيات  </a>
+                          </li>
+
+                          <li class="nav-item   active">
+                              <a class="nav-link" href="sounds.html">  صوتيات  </a>
+                          </li>
+
+                          <li class="nav-item">
+                              <a class="nav-link" href="library.html">  المكتبة  </a>
+                          </li>
+
+                          <li class="nav-item">
+                              <a class="nav-link" href="contact.html">  اتصل بنا   </a>
+                          </li>
+
+                    </ul>
+              </div>
+        </nav>
+         </div>
+     </div>
+
+    </header>
+
+
+    <!--=========================================*/
+    /*============//  videos-page  //============*/
+    /*=========================================-->
+    <section class="wrapper soundscateg-page">
+     <div class="container">
+        
+           
+        <div class="row">
+            
+            <div class="col-sm-12" id="amplitude-player">
+                
+              <div class="row">
+                  
+                <div class="col-sm-12" id="amplitude-left">
+                  <div id="player-left-bottom">   
+                    <div class="text-right thum">
+                      <img amplitude-song-info="cover_art_url" amplitude-main-song-info="true"/>
+                      <div id="meta-container">
+                        <span amplitude-song-info="name" amplitude-main-song-info="true" class="song-name"></span>
+
+                        <div class="song-artist-album">
+                          <span amplitude-song-info="artist" amplitude-main-song-info="true"></span>
+                          <span amplitude-song-info="album" amplitude-main-song-info="true"></span>
+                        </div>
+                      </div>
+                    </div>
+                      
+                    <div id="time-container">
+                      <span class="duration">
+                        <span class="amplitude-duration-minutes" amplitude-main-duration-minutes="true"></span>:<span class="amplitude-duration-seconds" amplitude-main-duration-seconds="true"></span>
+                      </span>
+                      <input type="range" class="amplitude-song-slider" amplitude-main-song-slider="true" step=".1"/>
+                      <span class="current-time">
+                        <span class="amplitude-current-minutes" amplitude-main-current-minutes="true"></span>:<span class="amplitude-current-seconds" amplitude-main-current-seconds="true"></span>
+                      </span>
+                    </div>
+                      
+                    <div id="control-container">
+                      <div id="repeat-container">
+                        <div class="amplitude-repeat" id="repeat"></div>
+                      </div>
+
+                      <div id="central-control-container">
+                        <div id="central-controls">
+                          <div class="amplitude-prev" id="previous"></div>
+                          <div class="amplitude-play-pause" amplitude-main-play-pause="true" id="play-pause"></div>
+                          <div class="amplitude-next" id="next"></div>
+                        </div>
+                      </div>
+
+                      <div id="shuffle-container">
+                        <div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  
+                <div class="col-sm-12" id="amplitude-right">
+                    
+                  <div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="0">
+                    <div class="song-now-playing-icon-container">
+                      <div class="play-button-container">
+
+                      </div>
+                      <img class="now-playing" src="images/now-playing.svg"/>
+                    </div>
+                    <div class="song-meta-data">
+                      <span class="song-title"> الفاتحة </span>
+                      <!-- <span class="song-artist">Ancient Astronauts</span> -->
+                    </div>
+                    <span class="song-duration">3:30</span>
+                     <div class="doc-download">
+                             <a href="sounds/1.mp3" download> <i class="icofont icofont-download-alt"></i> </a>
+                     </div>
+                  </div>                  
+                  <div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="1">
+                    <div class="song-now-playing-icon-container">
+                      <div class="play-button-container">
+
+                      </div>
+                      <img class="now-playing" src="images/now-playing.svg"/>
+                    </div>
+                    <div class="song-meta-data">
+                      <span class="song-title"> الكوثر</span>
+                      <!-- <span class="song-artist">Lorn</span> -->
+                    </div>
+                    <span class="song-duration">3:16</span>
+                    <div class="doc-download">
+                             <a href="sounds/2.mp3" download> <i class="icofont icofont-download-alt"></i> </a>
+                     </div>
+                  </div>
+                  <div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="2">
+                    <div class="song-now-playing-icon-container">
+                      <div class="play-button-container">
+
+                      </div>
+                      <img class="now-playing" src="images/now-playing.svg"/>
+                    </div>
+                    <div class="song-meta-data">
+                      <span class="song-title"> الكافرون </span>
+                      <!-- <span class="song-artist">Lorn</span> -->
+                    </div>
+                    <span class="song-duration">3:32</span>
+                    <div class="doc-download">
+                             <a href="sounds/3.mp3" download> <i class="icofont icofont-download-alt"></i> </a>
+                     </div>
+                  </div>
+                  <div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="3">
+                    <div class="song-now-playing-icon-container">
+                      <div class="play-button-container">
+
+                      </div>
+                      <img class="now-playing" src="images/now-playing.svg"/>
+                    </div>
+                    <div class="song-meta-data">
+                      <span class="song-title"> التكاثر </span>
+                      <!-- <span class="song-artist">Ancient Astronauts</span> -->
+                    </div>
+                    <span class="song-duration">3:30</span>
+                    <div class="doc-download">
+                             <a href="sounds/4.mp3" download> <i class="icofont icofont-download-alt"></i> </a>
+                     </div>
+                  </div>
+                  <div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="4">
+                    <div class="song-now-playing-icon-container">
+                      <div class="play-button-container">
+
+                      </div>
+                      <img class="now-playing" src="images/now-playing.svg"/>
+                    </div>
+                    <div class="song-meta-data">
+                      <span class="song-title"> النصر</span>
+                      <!-- <span class="song-artist">Emancipator</span> -->
+                    </div>
+                    <span class="song-duration">5:12</span>
+                    <div class="doc-download">
+                             <a href="sounds/5.mp3" download> <i class="icofont icofont-download-alt"></i> </a>
+                     </div>
+                  </div>
+                  <div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="5">
+                    <div class="song-now-playing-icon-container">
+                      <div class="play-button-container">
+
+                      </div>
+                      <img class="now-playing" src="images/now-playing.svg"/>
+                    </div>
+                    <div class="song-meta-data">
+                      <span class="song-title"> المسد </span>
+                      <!-- <span class="song-artist">pg.lost</span> -->
+                    </div>
+                    <span class="song-duration">5:29</span>
+                    <div class="doc-download">
+                             <a href="sounds/6.mp3" download> <i class="icofont icofont-download-alt"></i> </a>
+                     </div>
+                  </div>
+                  <div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="6">
+                    <div class="song-now-playing-icon-container">
+                      <div class="play-button-container">
+
+                      </div>
+                      <img class="now-playing" src="images/now-playing.svg"/>
+                    </div>
+                    <div class="song-meta-data">
+                      <span class="song-title"> الإخلاص </span>
+                      <!-- <span class="song-artist">Russian Circles</span> -->
+                    </div>
+                    <span class="song-duration">5:29</span>
+                    <div class="doc-download">
+                             <a href="sounds/7.mp3" download> <i class="icofont icofont-download-alt"></i> </a>
+                     </div>
+                  </div>
+                  <div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="7">
+                    <div class="song-now-playing-icon-container">
+                      <div class="play-button-container">
+
+                      </div>
+                      <img class="now-playing" src="images/now-playing.svg"/>
+                    </div>
+                    <div class="song-meta-data">
+                      <span class="song-title"> الفلق </span>
+                      <!-- <span class="song-artist">Jimkata</span> -->
+                    </div>
+                    <span class="song-duration">2:39</span>
+                    <div class="doc-download">
+                             <a href="sounds/8.mp3" download> <i class="icofont icofont-download-alt"></i> </a>
+                     </div>
+                  </div>
+                  <div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="8">
+                    <div class="song-now-playing-icon-container">
+                      <div class="play-button-container">
+
+                      </div>
+                      <img class="now-playing" src="images/now-playing.svg"/>
+                    </div>
+                    <div class="song-meta-data">
+                      <span class="song-title"> الناس </span>
+                      <!-- <span class="song-artist">Little People</span> -->
+                    </div>
+                    <span class="song-duration">1:00</span>
+                    <div class="doc-download">
+                             <a href="sounds/9.mp3" download> <i class="icofont icofont-download-alt"></i> </a>
+                     </div>
+                  </div>
+                  <div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="9">
+                    <div class="song-now-playing-icon-container">
+                      <div class="play-button-container">
+
+                      </div>
+                      <img class="now-playing" src="images/now-playing.svg"/>
+                    </div>
+                    <div class="song-meta-data">
+                      <span class="song-title"> التين </span>
+                      <!-- <span class="song-artist">Emancipator</span> -->
+                    </div>
+                    <span class="song-duration">5:25</span>
+                    <div class="doc-download">
+                             <a href="sounds/10.mp3" download> <i class="icofont icofont-download-alt"></i> </a>
+                     </div>
+                  </div>
+                  <div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="10">
+                    <div class="song-now-playing-icon-container">
+                      <div class="play-button-container">
+
+                      </div>
+                      <img class="now-playing" src="images/now-playing.svg"/>
+                    </div>
+                    <div class="song-meta-data">
+                      <span class="song-title"> الزلزلة </span>
+                      <!-- <span class="song-artist">Emancipator</span> -->
+                    </div>
+                    <span class="song-duration">5:40</span>
+                    <div class="doc-download">
+                             <a href="sounds/11.mp3" download> <i class="icofont icofont-download-alt"></i> </a>
+                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+     </div>     
+   
+    </section>
+      
+   
+    <!--=========================================*/
+    /*============//      footer   //============*/
+    /*=========================================--> 
+      
+    <section class="footer">
+    <div class="container">
+         <p> جميع الحقوق محفوظة لموقع البيان </p>
+        
+         <div class="footer-social">
+            <ul>
+                 <li class="wow fadeInLeft" data-wow-delay=".2s" data-wow-duration=".5s"> 
+                     <a href="#"> <i class="icofont icofont-social-facebook"></i>  </a> 
+                 </li>
+                 <li class="wow fadeInLeft" data-wow-delay=".5s" data-wow-duration=".5s"> 
+                     <a href="#"> <i class="icofont icofont-social-instagram"></i>   </a>
+                 </li>
+                 <li class="wow fadeInLeft" data-wow-delay=".8s" data-wow-duration=".5s">
+                     <a href="#"> <i class="icofont icofont-social-twitter"></i>  </a> 
+                 </li>
+                 <li class="wow fadeInLeft" data-wow-delay="1.1s" data-wow-duration=".5s">
+                     <a href="#"> <i class="icofont icofont-social-google-plus"></i>  </a> 
+                 </li>
+            </ul>
+         </div>
+		
+		
+    </div>  
+    </section>
+         
+
+      
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/wow.min.js"></script>  
+    <script src="js/owl.carousel.min.js"></script> 
+    <script src="js/edit.js"></script>
+    
+    <script>
+              new WOW().init();
+    </script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/amplitude.js"></script>
+    <script src="js/functions.js"></script>
+    <script type="text/javascript">
+          Amplitude.init({
+            "songs": [
+              {
+                "name": " الفاتحة ",
+                "artist": "ماهر المعيقلى ",
+                // "album": "داري يا قلبي",
+                "url": "sounds/1.mp3",
+                "cover_art_url": "images/down-watchvid.png"
+              },
+              {
+                "name": "الكوثر",
+                "artist": "ماهر المعيقلى ",
+                // "album": "Ask The Dust",
+                "url": "sounds/2.mp3",
+                "cover_art_url": "images/sound-pic-2.png"
+              },
+              {
+                "name": "الكافرون ",
+                "artist": "ماهر المعيقلى ",
+                // "album": "Anvil",
+                "url": "sounds/3.mp3",
+                "cover_art_url": "images/fatwa-3.png"
+              },
+              {
+                "name": "التكاثر ",
+                "artist": "ماهر المعيقلى ",
+                // "album": "We Are to Answer",
+                "url": "sounds/4.mp3",
+                "cover_art_url": "images/sound-pic-1.png"
+              },
+              {
+                "name": "النصر",
+                "artist": "ماهر المعيقلى ",
+                // "album": "Soon It Will Be Cold Enough",
+                "url": "sounds/5.mp3",
+                "cover_art_url": "images/down-watchvid.png"
+              },
+              {
+                "name": "المسد",
+                "artist": "ماهر المعيقلى ",
+                // "album": "Key",
+                "url": "sounds/6.mp3",
+                "cover_art_url": "images/sound-pic-2.png"
+              },
+              {
+                "name": "الاخلاص",
+                "artist": "ماهر المعيقلى ",
+                // "album": "Guidance",
+                "url": "sounds/7.mp3",
+                "cover_art_url": "images/sound-pic-1.png"
+              },
+              {
+                "name": "الفلق",
+                "artist": "ماهر المعيقلى ",
+                // "album": "Die Digital",
+                "url": "sounds/8.mp3",
+                "cover_art_url": "images/down-watchvid.png"
+              },
+              {
+                "name": "الناس",
+                "artist": "ماهر المعيقلى ",
+                // "album": "We Are But Hunks of Wood Remixes",
+                "url": "sounds/9.mp3",
+                "cover_art_url": "images/sound-pic-2.png"
+              },
+              {
+                "name": " التين ",
+                "artist": " ماهر المعيقلى",
+                // "album": "Dusk To Dawn",
+                "url": "sounds/10.mp3",
+                "cover_art_url": "images/sound-pic-1.png"
+              },
+              {
+                "name": " الزلزلة ",
+                "artist": " ماهر المعيقلى",
+                // "album": "Soon It Will Be Cold Enough",
+                "url": "sounds/11.mp3",
+                "cover_art_url": "images/down-watchvid.png"
+              }
+            ]
+          });
+
+          var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 1500
+          });
+      
+        </script>
+  
+  </body>
+</html>   
+      
+      
